@@ -33,7 +33,7 @@ This portion of the code searches for spaces in the morse code, marking individu
 I created this project primarily for a school project. I chose to create a Morse code decoder because I knew it would be a challenge for me and would help me expand my knowledge with strings, arrays, and sequential text files.
 
 # Installation
-Download project with the link, all additional files are created in the script.
+Download project with the link 'C++ final project.cpp', all additional files are created in the script.
 
 # Tests
 		cout << endl;
