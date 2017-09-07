@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	cout << "The length of a dot is one unit." << endl;
 	cout << "A dash is three units." << endl;
 	cout << "The space between parts of the same letter is one unit." << endl;
-	cout << "The space between words in seven units (Represented by a forward slash in this program)." << endl;
+	cout << "The space between words is seven units (Represented by a forward slash in this program)." << endl;
 	while (menuOption != 7)
 	{
 		cout << endl;
