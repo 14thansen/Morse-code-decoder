@@ -47,5 +47,56 @@ Download project with the link 'C++ final project.cpp', all additional files are
 		cout << "Enter menu option: ";
 		cin >> menuOption;
 		cout << endl;
-When testing the program you will be given these options, as you select an option futher instructions will be given.
+		
+This is the first thing you will see as you run the program. Using the first option, "English to Morse code", will allow you to convert words and phrases using the germanic alphabet into the morse code alphabet.
+		1  English to Morse code
+		2  Morse code to English
+		3  Conversation mode
+		4  Recently encoded words
+		5  Recently decoded words
+		6  Clear memory
+		7  Exit program
+		Enter menu option: 1
 
+		Enter a word or a phrase (press [enter] to exit): Example
+		--> . -..- .- -- .--. .-.. .
+		
+By selecting option two you can convert words and phrases from Morse code to the germanic alphabet.
+		Enter a word or a phrase in morse code, seperate each word by a space,
+		a forward slash and another space ' / '. Seperate each letter by a single
+		space (press [enter] to exit): . -..- .- -- .--. .-.. .
+		--> example
+
+Option three allows you to have a conversation of sorts. You can convert words and phrases back and forth from english to morse code and then from morse code to english. This pattern will repeat until you prompt the program to stop.
+		Converstation mode allows you to encode and decode
+		sentances repeatedly, starting with encoding.
+		When prompted by "Continue..." press [enter] to continue
+		the converstation or press [space] [enter] to leave converstation mode
+
+		Continue...
+
+		Enter a word or a phrase (press [enter] to exit): Hello how are you
+		--> .... . .-.. .-.. --- / .... --- .-- / .- .-. . / -.-- --- ..- 
+
+		Enter a word or a phrase in morse code, seperate each word by a space,
+		a forward slash and another space ' / '. Seperate each letter by a single
+		space (press [enter] to exit): --. --- --- -.. / .- -. -.. / -.-- --- ..-
+		--> good and you
+
+		Continue...
+
+The program automatically stores recently decoded and encoded words and phrases in seperate text files. Options 4 and 5 allow you to see your recent words, while option 6 clears this memory.
+		EXAMPLE --> . -..- .- -- .--. .-.. . 
+		HELLO HOW ARE YOU --> .... . .-.. .-.. --- / .... --- .-- / .- .-. . / -.-- --- ..- 
+		
+		. -..- .- -- .--. .-.. . --> example
+		--. --- --- -.. / .- -. -.. / -.-- --- ..- --> good and you
+		
+		5  Recently decoded words
+		6  Clear memory
+		7  Exit program
+		Enter menu option: 6
+
+		Memory cleared.
+		
+The final option will terminate the program.
