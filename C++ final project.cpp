@@ -120,7 +120,7 @@ void englishToMorse(int toGo)
 			newPhrase += " ";
 			kill = 0;
 		}
-		cout << newPhrase << endl << endl;
+		cout << "--> " << newPhrase << endl << endl;
 		outFile << origPhrase << '#' << newPhrase << endl;
 	}
 	else 
@@ -198,7 +198,7 @@ void morseToEnglish(int toGo)
 			space -= 1;
 		} while (space > 0);
 		//end repeat
-		cout << newPhrase << endl << endl;
+		cout << "--> " << newPhrase << endl << endl;
 		outFile << origPhrase << '#' << newPhrase << endl;
 	}
 	else 
@@ -246,7 +246,8 @@ void recentWords()
 		while (!inFile.eof())
 		{
 			//display words
-			cout << word << " --> " << code << endl;
+			if (word.length() > 0)
+				cout << word << " --> " << code << endl;
 			getline(inFile, word, '#');
 			getline(inFile, code);
 		}//end while
@@ -275,7 +276,8 @@ void recentCodes()
 		while (!inFile.eof())
 		{
 			//display words
-			cout << code << " --> " << word << endl;
+			if (code.length() > 0)
+				cout << code << " --> " << word << endl;
 			getline(inFile, code, '#');
 			getline(inFile, word);
 		}//end while
